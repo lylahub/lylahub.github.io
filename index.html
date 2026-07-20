@@ -1,30 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lyla Liu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lyla Liu — Computer Science graduate student and software developer." />
+  <title>Lyla Liu | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <h1>Hi, I'm Lyla!</h1>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#home">LL</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-    <p>
-        I am a Computer Science master's student at UCLA.
-    </p>
+  <main>
+    <section id="home" class="hero container">
+      <p class="eyebrow">Computer Science · Machine Learning · Software Engineering</p>
+      <h1>Hi, I’m <span>Lyla Liu.</span></h1>
+      <p class="hero-text">
+        I am a Computer Science master’s student at UCLA interested in machine learning,
+        computer vision, privacy, and building practical software systems.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#projects">View my projects</a>
+        <a class="button secondary" href="resume.pdf">View résumé</a>
+      </div>
+    </section>
 
-    <h2>About Me</h2>
-    <p>
-        I am interested in machine learning, computer vision,
-        privacy, and software development.
-    </p>
+    <section id="about" class="section container">
+      <div class="section-heading">
+        <p class="section-number">01</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          My work spans machine learning, computer vision, computational imaging,
+          reinforcement learning, privacy-preserving AI, and full-stack development.
+          I enjoy turning research ideas into clear, reliable, and user-focused systems.
+        </p>
+        <div class="skills">
+          <span>Python</span>
+          <span>PyTorch</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Firebase</span>
+          <span>Unity</span>
+          <span>C++</span>
+          <span>Git</span>
+        </div>
+      </div>
+    </section>
 
-    <h2>Projects</h2>
-    <p>My projects will be added here soon.</p>
+    <section id="experience" class="section container">
+      <div class="section-heading">
+        <p class="section-number">02</p>
+        <h2>Research & Experience</h2>
+      </div>
 
-    <h2>Contact</h2>
-    <p>
-        <a href="https://github.com/lylahub">GitHub</a>
-    </p>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div>
+            <h3>Privacy & Security in Large Language Models</h3>
+            <p class="meta">UCLA Secure Systems and Architectures Lab</p>
+          </div>
+          <p>
+            Developed privacy-preserving input masking methods for large language models
+            and evaluated leakage reduction using privacy-focused metrics.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div>
+            <h3>Computational Imaging Research</h3>
+            <p class="meta">UCLA Ozcan Research Lab</p>
+          </div>
+          <p>
+            Built self-supervised hologram reconstruction pipelines with physics-consistency
+            objectives using Python and PyTorch.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <div>
+            <h3>Liquid Biopsy Research</h3>
+            <p class="meta">UCLA Liquid Biopsy Lab</p>
+          </div>
+          <p>
+            Contributed to research on circulating tumor cells and extracellular vesicles
+            for differentiated thyroid cancer.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-heading">
+        <p class="section-number">03</p>
+        <h2>Selected Projects</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-top">
+            <span class="project-label">Computer Vision</span>
+            <a href="https://github.com/Parixxx21/269_Contour" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+          <h3>Robust Active Contour Models</h3>
+          <p>
+            Improved segmentation under noisy and low-contrast conditions using
+            coarse-to-fine optimization and adaptive energy weighting.
+          </p>
+          <div class="tech-list">
+            <span>Python</span><span>OpenCV</span><span>Image Segmentation</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-label">Reinforcement Learning</span>
+            <a href="https://github.com/Parixxx21/Squirrel_test" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+          <h3>Squirrel Foraging Simulation</h3>
+          <p>
+            Built a Unity ML-Agents environment where an autonomous squirrel learns
+            to collect food, avoid hazards, and use safe zones.
+          </p>
+          <div class="tech-list">
+            <span>Unity</span><span>C#</span><span>PPO</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-label">Full-Stack Development</span>
+            <span>Team Project</span>
+          </div>
+          <h3>Gymstant Web App</h3>
+          <p>
+            Developed a digital fitness platform with account creation, profile
+            management, content sharing, and visibility controls.
+          </p>
+          <div class="tech-list">
+            <span>React</span><span>JavaScript</span><span>Firebase</span>
+          </div>
+        </article>
+          
+        <article class="project-card">
+          <div class="project-top">
+            <span class="project-label">Machine Learning</span>
+            <a href="https://github.com/lylahub/ECE219P1" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+          <h3>ECE 219 Project 1</h3>
+          <p>
+            Applied machine learning methods to analyze data, compare models, and
+            evaluate predictive performance through a reproducible pipeline.
+          </p>
+          <div class="tech-list">
+            <span>Python</span><span>Scikit-learn</span><span>Data Analysis</span>
+          </div>
+        </article> 
+      </div>
+
+      <p class="collaboration-note">
+        Some repositories are owned by teammates because these were collaborative group projects.
+      </p>
+    </section>
+
+    <section id="contact" class="section contact container">
+      <div>
+        <p class="section-number">04</p>
+        <h2>Let’s Connect</h2>
+        <p>
+          I’m always interested in discussing research, software engineering,
+          machine learning, and new opportunities.
+        </p>
+      </div>
+      <div class="contact-links">
+        <a href="https://github.com/lylahub" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/lylalxn/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <a href="mailto:xuanning16@g.ucla.edu">Email ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>Designed and built by Lyla Liu.</p>
+      <p>© 2026</p>
+    </div>
+  </footer>
 </body>
 </html>
